@@ -28,6 +28,7 @@ gem 'faraday'
 gem 'json'
 gem 'fast_jsonapi'
 gem 'rack-cors'
+gem "figaro"
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
