@@ -6,7 +6,7 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -80,33 +80,58 @@
           1,
           1,
           1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
           null,
           1,
           1,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          8,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
+          null,
+          1,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          null,
+          null,
+          null,
+          1,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          null,
+          null,
+          null,
+          1,
+          8,
+          8,
+          8,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/forecast_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null
         ]
       },
@@ -118,22 +143,8 @@
         ],
         "branches": {
         }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/forecast_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1604635415
+    "timestamp": 1604675939
   }
 }
