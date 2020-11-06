@@ -1,6 +1,6 @@
 class WeatherService
   def self.get_forecast_for_location(latitude, longitude)
-    to_json('/data/2.5/onecall', { lat: latitude, lon: longitude })
+    to_json('/data/2.5/onecall', { lat: latitude, lon: longitude, units: 'imperial' })
   end
 
   def self.to_json(url, params = {})

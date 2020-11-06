@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe "Forecast" do
   it "can get weather for a city" do
     get '/api/v1/forecast?location=denver,co'
+    require 'pry'; binding.pry
     expect(response).to be_successful
     weather = JSON.parse(response.body, symbolize_names: true)
     expect(weather).to be_a Hash
