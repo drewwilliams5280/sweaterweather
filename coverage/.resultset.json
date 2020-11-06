@@ -25,7 +25,7 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -54,6 +54,20 @@
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/weather_service.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -68,6 +82,6 @@
         }
       }
     },
-    "timestamp": 1604617671
+    "timestamp": 1604622863
   }
 }
