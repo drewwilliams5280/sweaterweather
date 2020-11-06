@@ -4,6 +4,6 @@ class ForecastFacade
     latitude = location_info_hash[:results][0][:locations][0][:displayLatLng][:lat]
     longitude = location_info_hash[:results][0][:locations][0][:displayLatLng][:lng]
     forecast_info_hash = WeatherService.get_forecast_for_location(latitude, longitude)
-    Forecast.new(forecast_info_hash)
+    f=Forecast.new(forecast_info_hash)
   end
 end
