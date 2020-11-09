@@ -38,7 +38,7 @@ class Forecast
       single_data_hash[:wind_directions] = convert_wind_degrees_to_direction(single_data_hash[:wind_deg])
       single_data_hash[:conditions] = single_data_hash[:weather][0][:description]
       single_data_hash[:icon] = single_data_hash[:weather][0][:icon]
-      single_data_hash.slice!(:time, :wind_speed, :wind_directions, :conditions, :icon)
+      single_data_hash.slice!(:time, :temp, :wind_speed, :wind_directions, :conditions, :icon)
       single_data_hash
     end
   end
