@@ -13,5 +13,7 @@ RSpec.describe "Forecast" do
     expect(weather_results).to have_key(:type)
     expect(weather_results).to have_key(:attributes)
     expect(weather_results[:attributes]).to have_key(:current_weather)
+    expect(weather_results[:attributes]).to have_key(:daily_weather)
+    expect(weather_results[:attributes]).to have_key(:hourly_weather)
   end
 end
