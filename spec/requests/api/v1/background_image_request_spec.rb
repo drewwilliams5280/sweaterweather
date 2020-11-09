@@ -27,7 +27,7 @@ RSpec.describe "Background image" do
     expect(response).to be_successful
     image = JSON.parse(response.body, symbolize_names: true)
     expect(image).to be_a Hash
-    
+    require 'pry'; binding.pry
     image_results = image[:data]
     expect(image_results).to be_a Hash
     expect(image_results).to have_key(:id)
@@ -38,7 +38,5 @@ RSpec.describe "Background image" do
     expect(image_results[:attributes][:image]).to have_key(:image_url)
     expect(image_results[:attributes][:image]).to have_key(:credit)
     expect(image_results[:attributes][:image][:credit]).to have_key(:source)
-    expect(image_results[:attributes][:image][:credit]).to have_key(:author)
-    expect(image_results[:attributes][:image][:credit]).to have_key(:logo)
   end
 end

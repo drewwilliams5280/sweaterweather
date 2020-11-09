@@ -6,6 +6,7 @@
           1,
           1,
           1,
+          1,
           null,
           null
         ]
@@ -88,6 +89,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
@@ -100,6 +102,17 @@
           null,
           null,
           null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/image_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           1,
           null,
           null
@@ -223,6 +236,6 @@
         }
       }
     },
-    "timestamp": 1604962193
+    "timestamp": 1604962623
   }
 }

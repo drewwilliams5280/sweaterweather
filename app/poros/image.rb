@@ -1,8 +1,9 @@
 class Image
+  attr_reader :location, :details, :id
   def initialize(location, data)
     @location = location
     @details = format_image_details(data)
-    require 'pry'; binding.pry
+    @id = nil
   end
 
   def format_image_details(data)
