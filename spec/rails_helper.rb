@@ -7,6 +7,7 @@ SimpleCov.start 'rails' do
   add_filter '/app/mailers/'
   add_filter '/config/'
   add_filter '/spec/'
+  add_filter '/app/models/application_record.rb'
 end
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
