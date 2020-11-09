@@ -4,7 +4,7 @@ RSpec.describe "Trails path" do
   it "can get basic weather and trail info" do
     get '/api/v1/trails?location=denver,co'
     expect(response).to be_successful
-    weather = JSON.parse(response.body, symbolize_names: true)
+    trail = JSON.parse(response.body, symbolize_names: true)
     expect(trail).to be_a Hash
 
     trail_data = trail[:data]
@@ -17,10 +17,10 @@ RSpec.describe "Trails path" do
     expect(trail_data[:attributes][:forecast]).to have_key(:summary)
     expect(trail_data[:attributes][:forecast]).to have_key(:temperature)
     expect(trail_data[:attributes]).to have_key(:trails)
-    expect(trail_data[:attributes][:trails]).to have_key(:name)
-    expect(trail_data[:attributes][:trails]).to have_key(:summary)
-    expect(trail_data[:attributes][:trails]).to have_key(:difficulty)
-    expect(trail_data[:attributes][:trails]).to have_key(:location)
-    expect(trail_data[:attributes][:trails]).to have_key(:distance_to_trail)
+    expect(trail_data[:attributes][:trails][0]).to have_key(:name)
+    expect(trail_data[:attributes][:trails][0]).to have_key(:summary)
+    expect(trail_data[:attributes][:trails][0]).to have_key(:difficulty)
+    expect(trail_data[:attributes][:trails][0]).to have_key(:location)
+    expect(trail_data[:attributes][:trails][0]).to have_key(:distance_to_trail)
   end
 end

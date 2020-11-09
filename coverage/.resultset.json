@@ -145,6 +145,7 @@
           1,
           1,
           1,
+          1,
           null,
           null
         ]
@@ -202,6 +203,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null,
           null,
           1,
@@ -221,6 +224,14 @@
           null
         ]
       },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/trail_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/models/application_record.rb": {
         "lines": [
           0,
@@ -231,6 +242,6 @@
         }
       }
     },
-    "timestamp": 1604943262
+    "timestamp": 1604943589
   }
 }
