@@ -1,6 +1,6 @@
 class HikingService
   def self.get_trails(latitude, longitude)
-    to_json('/data/get-trails', { lat: latitude, lon: longitude})
+    to_json('/data/get-trails', { lat: latitude, lon: longitude })
   end
   
   def self.to_json(url, params = {})

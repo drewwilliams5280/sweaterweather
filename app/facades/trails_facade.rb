@@ -8,7 +8,6 @@ class TrailsFacade
       forecast: get_forecast_for_location(latitude, longitude)[:current],
       trails: get_trails_for_location(latitude, longitude)
     }
-    require 'pry'; binding.pry
     Trail.new(data)
   end
 
