@@ -144,6 +144,20 @@
           null
         ]
       },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/facades/trails_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/models/application_record.rb": {
         "lines": [
           0,
@@ -154,6 +168,6 @@
         }
       }
     },
-    "timestamp": 1604939142
+    "timestamp": 1604939795
   }
 }
