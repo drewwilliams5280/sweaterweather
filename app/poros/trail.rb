@@ -1,4 +1,5 @@
 class Trail
+  attr_reader :location, :forecast, :trails
   def initialize(data)
     @location = data[:location]
     @forecast = format_forecast(data[:forecast])
