@@ -1,6 +1,60 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/trail.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          20,
+          20,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/map_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          20,
+          20,
+          null,
+          null,
+          1,
+          22,
+          22,
+          22,
+          null,
+          22,
+          null,
+          null,
+          1,
+          22,
+          null,
+          null
+        ]
+      },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/forecast_controller.rb": {
         "lines": [
           1,
@@ -26,32 +80,6 @@
           1,
           1,
           1,
-          null,
-          null
-        ]
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/map_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          10,
-          10,
-          null,
-          null,
-          1,
-          12,
-          12,
-          12,
-          null,
-          12,
-          null,
-          null,
-          1,
-          12,
           null,
           null
         ]
@@ -196,34 +224,6 @@
           null
         ]
       },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/trail.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          10,
-          10,
-          10,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/trail_serializer.rb": {
         "lines": [
           1,
@@ -242,6 +242,6 @@
         }
       }
     },
-    "timestamp": 1604943589
+    "timestamp": 1604944712
   }
 }
