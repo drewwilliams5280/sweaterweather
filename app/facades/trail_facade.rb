@@ -1,5 +1,5 @@
-class TrailsFacade
-  def self.get_trails_object(location)
+class TrailFacade
+  def self.get_trail_object(location)
     location_info_hash = MapService.get_location_info(location)
     latitude = location_info_hash[:results][0][:locations][0][:displayLatLng][:lat]
     longitude = location_info_hash[:results][0][:locations][0][:displayLatLng][:lng]
