@@ -3,6 +3,11 @@ class MapService
     to_json('/geocoding/v1/address', {location: location})
   end
 
+  def self.get_distance(starting_location, ending_latitude, ending_longitude)
+    json = to_json('/directions/v2/route', {from: starting_location, to: "#{ending_latitude},#{ending_longitude}"})
+    json[:route][:legs][0][:distance]
+  end
+
   def self.to_json(url, params = {})
     response = conn.get(url) do |f|
       f.params = params

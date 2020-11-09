@@ -16,7 +16,7 @@ class Trail
     trails_hash[:trails].map do |single_trail_hash|
       single_trail_hash[:distance_to_trail] = MapService.get_distance(@location, single_trail_hash[:latitude], single_trail_hash[:longitude])
       single_trail_hash.slice!(:name, :summary, :difficulty, :location, :distance_to_trail)
-      require 'pry'; binding.pry
+      single_trail_hash
     end
   end
 end
