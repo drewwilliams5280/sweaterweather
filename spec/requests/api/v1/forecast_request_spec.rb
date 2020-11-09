@@ -8,7 +8,6 @@ RSpec.describe "Forecast" do
     expect(weather).to be_a Hash
     
     weather_results = weather[:data]
-    require 'pry'; binding.pry
     expect(weather_results).to be_a Hash
     expect(weather_results).to have_key(:id)
     expect(weather_results).to have_key(:type)
