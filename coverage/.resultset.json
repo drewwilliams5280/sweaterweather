@@ -1,6 +1,150 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/facades/forecast_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/map_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/weather_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/forecast.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          null,
+          null,
+          null,
+          1,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          null,
+          null,
+          null,
+          1,
+          8,
+          8,
+          8,
+          null,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/forecast_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/trails_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/models/application_record.rb": {
         "lines": [
           0,
@@ -9,156 +153,8 @@
         ],
         "branches": {
         }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/forecast_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/facades/forecast_facade.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/forecast.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/map_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/weather_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1604938578
+    "timestamp": 1604938880
   }
 }
