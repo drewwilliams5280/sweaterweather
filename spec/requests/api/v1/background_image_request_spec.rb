@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Background image" do
   it "can get an image for a city" do
     json_response = File.read('spec/fixtures/denver_map_request.json')
-    stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?key=xAL5sF4IOgBSY0S4ljsUcXT9RtTr19pg&location=denver,co").
+    stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?key=#{ENV['MAP_API_KEY']}&location=denver,co").
     with(
       headers: {
       'Accept'=>'*/*',
@@ -13,7 +13,7 @@ RSpec.describe "Background image" do
     to_return(status: 200, body: json_response, headers: {})
 
     json_response2 = File.read('spec/fixtures/denver_flickr_response.json')
-    stub_request(:get, "https://www.flickr.com/services/rest/?api_key=8b4076c0b5fb7c571c1d494d2aebbf35&format=json&is_getty=yes&lat=39.738453&lon=-104.984853&method=flickr.photos.search&nojsoncallback=1&page=1&per_page=1").
+    stub_request(:get, "https://www.flickr.com/services/rest/?api_key=#{ENV['IMAGE_API_KEY']}&format=json&is_getty=yes&lat=39.738453&lon=-104.984853&method=flickr.photos.search&nojsoncallback=1&page=1&per_page=1").
          with(
            headers: {
        	  'Accept'=>'*/*',
@@ -27,7 +27,7 @@ RSpec.describe "Background image" do
     expect(response).to be_successful
     image = JSON.parse(response.body, symbolize_names: true)
     expect(image).to be_a Hash
-    require 'pry'; binding.pry
+
     image_results = image[:data]
     expect(image_results).to be_a Hash
     expect(image_results).to have_key(:id)
