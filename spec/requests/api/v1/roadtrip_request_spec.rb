@@ -40,7 +40,6 @@ RSpec.describe "Road trip" do
     headers = {"CONTENT_TYPE" => "application/json"}
     post "/api/v1/road_trip", headers: headers, params: JSON.generate(roadtrip)
     json = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'; binding.pry
     expect(json).to be_a Hash
     expect(json).to have_key(:data)
     expect(json[:data]).to have_key(:id)
@@ -54,5 +53,23 @@ RSpec.describe "Road trip" do
     expect(json[:data][:attributes][:weather_at_eta]).to eq("")
     expect(json[:data][:attributes][:start_city]).to eq("New York, New York")
     expect(json[:data][:attributes][:end_city]).to eq("London, UK")
+  end
+
+  it "can gives 400 error for wrong API key" do
+    User.create(email: 'email@email.com', password: '123', password_confirmation: '123') do |user|
+      user.auth_token = 'jgn983hy48thw9begh98h4539h4'
+    end
+    roadtrip = ({
+      "origin": "New York,New York",
+      "destination": "London,UK",
+      "api_key": "jgn983hy48tdjkfjdkkdjfkladjsfhw9begh98h4539h4"
+    })
+    headers = {"CONTENT_TYPE" => "application/json"}
+    post "/api/v1/road_trip", headers: headers, params: JSON.generate(roadtrip)
+    json = JSON.parse(response.body, symbolize_names: true)
+    require 'pry'; binding.pry
+    expect(response.status).to eq(401)
+    expect(json).to have_key(:error)
+    expect(json[:error]).to eq("API key incorrect.")
   end
 end
