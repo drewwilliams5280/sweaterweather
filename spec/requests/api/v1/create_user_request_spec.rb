@@ -24,8 +24,22 @@ describe "Users API" do
 
     created_user = User.last
     
+    expect(User.count).to eq(1)
     expect(created_user.email).to eq(user_params[:email])
     expect(created_user.password_digest).to be_a String
     expect(created_user.api_key).to be_a String
+   end
+
+   it "can give 400 status for bad user params" do
+    user_params = ({
+      "email": "whatever@example.com",
+      "password": "password",
+      "password_confirmation": "pppppasswordddddd"
+     })
+     headers = {"CONTENT_TYPE" => "application/json"}
+     post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
+     
+     expect(response.status).to eq(400)
+     expect(User.count).to eq(0)
    end
 end
