@@ -13,6 +13,7 @@ RSpec.describe "Road trip" do
     headers = {"CONTENT_TYPE" => "application/json"}
     post "/api/v1/road_trip", headers: headers, params: JSON.generate(roadtrip)
     json = JSON.parse(response.body, symbolize_names: true)
+    require 'pry'; binding.pry
     expect(json).to be_a Hash
     expect(json).to have_key(:data)
     expect(json[:data]).to have_key(:id)

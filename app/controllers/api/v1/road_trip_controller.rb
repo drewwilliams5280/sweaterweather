@@ -2,7 +2,7 @@ class Api::V1::RoadTripController < ApplicationController
   def create
     if User.exists?(auth_token: roadtrip_params[:api_key])
       roadtrip = RoadTripFacade.create_roadtrip_object(roadtrip_params[:origin], roadtrip_params[:destination])
-      render json: RoadTripSerializer(roadtrip)
+      render json: RoadTripSerializer.new(roadtrip)
     else
       render json: { error: "API key incorrect." }, status: 401
     end
