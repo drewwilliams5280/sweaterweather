@@ -24,5 +24,7 @@ RSpec.describe "Road trip" do
     expect(json[:data][:attributes]).to have_key(:weather_at_eta)
     expect(json[:data][:attributes][:weather_at_eta]).to have_key(:temperature)
     expect(json[:data][:attributes][:weather_at_eta]).to have_key(:conditions)
+    expect(json[:data][:attributes][:start_city]).to eq("Denver, CO")
+    expect(json[:data][:attributes][:end_city]).to eq("Pueblo, CO")
   end
 end
