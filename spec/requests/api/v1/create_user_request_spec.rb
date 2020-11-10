@@ -18,16 +18,14 @@ describe "Users API" do
     expect(json[:data]).to have_key(:type)
     expect(json[:data]).to have_key(:attributes)
     expect(json[:data][:attributes]).to have_key(:id)
-    expect(json[:data][:attributes]).to have_key(:api_key)
     expect(json[:data][:attributes]).to have_key(:email)
     expect(json[:data][:attributes][:email]).to eq(user_params[:email])
 
     created_user = User.last
-    
+    require 'pry'; binding.pry
     expect(User.count).to eq(1)
     expect(created_user.email).to eq(user_params[:email])
     expect(created_user.password_digest).to be_a String
-    expect(created_user.api_key).to be_a String
    end
 
    it "can give 400 status for bad user params" do

@@ -210,12 +210,8 @@
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
-          null,
-          1,
           1,
           2,
-          2,
-          null,
           2,
           1,
           null,
@@ -235,6 +231,7 @@
         "lines": [
           1,
           1,
+          1,
           null,
           1,
           1,
@@ -246,6 +243,10 @@
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -268,6 +269,6 @@
         ]
       }
     },
-    "timestamp": 1604975830
+    "timestamp": 1605025855
   }
 }
