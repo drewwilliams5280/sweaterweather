@@ -22,7 +22,7 @@ describe "Users API" do
     expect(json[:data][:attributes][:email]).to eq(user_params[:email])
 
     created_user = User.last
-    require 'pry'; binding.pry
+
     expect(User.count).to eq(1)
     expect(created_user.email).to eq(user_params[:email])
     expect(created_user.password_digest).to be_a String
