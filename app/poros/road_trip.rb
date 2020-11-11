@@ -31,14 +31,14 @@ class RoadTrip
     split_time = travel_time.split(':').map { |num| num.to_i }
     hours_until_arrival = split_time[0] + 1 if split_time[1] >= 30
     hours_until_arrival = split_time[0] if split_time[1] < 30
-    weather = weather_data[:hourly][hours_until_arrival - 1]
+    weather = weather_data[:hourly][hours_until_arrival - 1] unless hours_until_arrival > 48
     if hours_until_arrival <= 48
       {
         temperature: weather[:temp],
         conditions: "#{weather[:weather][0][:main]} (#{weather[:weather][0][:description]})"
       }
     else
-      ""
+      "This information is only available for roadtrips shorter than 48 hours."
     end
   end
 end
