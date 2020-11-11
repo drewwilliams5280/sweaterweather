@@ -22,4 +22,19 @@ RSpec.describe "WeatherService" do
     expect(weather_info).to have_key(:daily)
     expect(weather_info).to have_key(:hourly)
   end
+
+  it 'can get directions with origin and destination' do
+    json_response = File.read('spec/fixtures/denver_to_pueblo.json')
+
+    stub_request(:get, "http://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=#{ENV['MAP_API_KEY']}&to=Pueblo,CO").
+         with(
+           headers: {
+       	  'Accept'=>'*/*',
+       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+       	  'User-Agent'=>'Faraday v1.1.0'
+           }).
+         to_return(status: 200, body: json_response, headers: {})
+
+    expect(MapService.get_directions("Denver,CO", "Pueblo,CO")).to eq(JSON.parse(json_response, symbolize_names: true))
+  end
 end

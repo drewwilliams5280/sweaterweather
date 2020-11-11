@@ -17,7 +17,6 @@ describe "Users API" do
     expect(json[:data]).to have_key(:id)
     expect(json[:data]).to have_key(:type)
     expect(json[:data]).to have_key(:attributes)
-    expect(json[:data][:attributes]).to have_key(:id)
     expect(json[:data][:attributes]).to have_key(:email)
     expect(json[:data][:attributes][:email]).to eq(user_params[:email])
 
