@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-describe "Forecast" do 
-  it "can exist" do 
+describe 'Forecast' do
+  it 'can exist' do
     data = File.read('spec/fixtures/weather_data.json')
     json_data = JSON.parse(data, symbolize_names: true)
     forecast = Forecast.new(json_data)

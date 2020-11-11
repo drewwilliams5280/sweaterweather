@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RoadTripFacade
   def self.create_roadtrip_object(origin, destination)
     map_data = MapService.get_directions(origin, destination)

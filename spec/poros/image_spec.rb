@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-describe "Image" do 
-  it "can exist" do 
+describe 'Image' do
+  it 'can exist' do
     data = File.read('spec/fixtures/denver_flickr_response.json')
     json_data = JSON.parse(data, symbolize_names: true)
     image = Image.new('denver,co', json_data[:photos][:photo][0])

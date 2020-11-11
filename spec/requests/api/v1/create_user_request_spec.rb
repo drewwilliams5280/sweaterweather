@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-describe "Users API" do
-  it "can register/create a user" do
-    user_params = ({
-     "email": "whatever@example.com",
-     "password": "password",
-     "password_confirmation": "password"
-    })
-    headers = {"CONTENT_TYPE" => "application/json"}
-    post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
+describe 'Users API' do
+  it 'can register/create a user' do
+    user_params = {
+      "email": 'whatever@example.com',
+      "password": 'password',
+      "password_confirmation": 'password'
+    }
+    headers = { 'CONTENT_TYPE' => 'application/json' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
     expect(response).to be_successful
     expect(response.status).to eq(201)
     json = JSON.parse(response.body, symbolize_names: true)
@@ -25,18 +27,18 @@ describe "Users API" do
     expect(User.count).to eq(1)
     expect(created_user.email).to eq(user_params[:email])
     expect(created_user.password_digest).to be_a String
-   end
+  end
 
-   it "can give 400 status for bad user params" do
-    user_params = ({
-      "email": "whatever@example.com",
-      "password": "password",
-      "password_confirmation": "pppppasswordddddd"
-     })
-     headers = {"CONTENT_TYPE" => "application/json"}
-     post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
-     
-     expect(response.status).to eq(400)
-     expect(User.count).to eq(0)
-   end
+  it 'can give 400 status for bad user params' do
+    user_params = {
+      "email": 'whatever@example.com',
+      "password": 'password',
+      "password_confirmation": 'pppppasswordddddd'
+    }
+    headers = { 'CONTENT_TYPE' => 'application/json' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
+
+    expect(response.status).to eq(400)
+    expect(User.count).to eq(0)
+  end
 end

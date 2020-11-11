@@ -1,7 +1,7 @@
+# frozen_string_literal: true
+
 class ImageSerializer
   include FastJsonapi::ObjectSerializer
 
-  attribute :image do |object|
-    object.details
-  end
+  attribute :image, &:details
 end
