@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ForecastFacade
   def self.get_forecast_for_location(location)
     location_info_hash = MapService.get_location_info(location)

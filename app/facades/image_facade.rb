@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ImageFacade
   def self.create_image_object(location)
     location_info_hash = MapService.get_location_info(location)

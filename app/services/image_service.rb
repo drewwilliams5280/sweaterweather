@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ImageService
   def self.get_image_details(latitude, longitude)
     image_params = {

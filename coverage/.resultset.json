@@ -3,6 +3,8 @@
     "coverage": {
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/facades/forecast_facade.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           2,
@@ -16,6 +18,8 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/map_service.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           5,
@@ -41,6 +45,8 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/weather_service.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           5,
@@ -62,8 +68,11 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/forecast.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          null,
           1,
           3,
           3,
@@ -117,6 +126,8 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/facades/image_facade.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           2,
@@ -130,6 +141,8 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/services/image_service.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           3,
@@ -161,8 +174,11 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/image.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          null,
           1,
           3,
           3,
@@ -186,6 +202,8 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/facades/road_trip_facade.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           3,
@@ -203,8 +221,11 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/road_trip.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          null,
           1,
           5,
           5,
@@ -222,10 +243,11 @@
           null,
           null,
           1,
-          40,
           10,
+          10,
+          null,
           1,
-          9,
+          null,
           6,
           null,
           3,
@@ -233,7 +255,7 @@
           null,
           null,
           1,
-          24,
+          6,
           6,
           6,
           6,
@@ -251,33 +273,45 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/backgrounds_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
           1,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/application_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/image_serializer.rb": {
         "lines": [
-          1,
-          1,
+          null,
           null,
           1,
           1,
           null,
+          1,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/users_controller.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          1,
           1,
           1,
           4,
@@ -293,11 +327,15 @@
           1,
           4,
           null,
+          null,
+          null,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/models/user.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -309,6 +347,8 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/user_serializer.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -316,23 +356,29 @@
           1,
           null,
           1,
-          4,
-          null,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/forecast_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
           1,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/forecast_serializer.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -341,6 +387,10 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/road_trip_controller.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          1,
           1,
           1,
           3,
@@ -356,11 +406,15 @@
           1,
           7,
           null,
+          null,
+          null,
           null
         ]
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/serializers/road_trip_serializer.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -370,8 +424,11 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/poros/road_trip_error.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          null,
           1,
           1,
           1,
@@ -392,6 +449,10 @@
       },
       "/Users/drewwilliams/turing/3module/projects/sweaterweather/app/controllers/api/v1/sessions_controller.rb": {
         "lines": [
+          null,
+          null,
+          1,
+          1,
           1,
           1,
           2,
@@ -407,10 +468,12 @@
           1,
           4,
           null,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1605061822
+    "timestamp": 1605062466
   }
 }

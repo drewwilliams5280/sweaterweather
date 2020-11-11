@@ -1,15 +1,20 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
-RSpec.describe "WeatherService" do
+RSpec.describe 'WeatherService' do
   it 'can get forecast for location' do
     json_response = File.read('spec/fixtures/weather_service_spec_line_3.json')
-    stub_request(:get, "https://api.openweathermap.org/data/2.5/onecall?appid=#{ENV['WEATHER_API_KEY']}&lat=31.811&lon=-106.564&units=imperial").
-         with(
-           headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v1.1.0'
-           }).
-         to_return(status: 200, body: json_response, headers: {})
+    stub_request(
+      :get,
+      "https://api.openweathermap.org/data/2.5/onecall?appid=#{ENV['WEATHER_API_KEY']}&lat=31.811&lon=-106.564&units=imperial"
+    )
+      .with(
+        headers: {
+          'Accept' => '*/*',
+          'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'User-Agent' => 'Faraday v1.1.0'
+        }
+      ).to_return(status: 200, body: json_response, headers: {})
 
     weather_info = WeatherService.get_forecast_for_location('31.811', '-106.564')
     expect(weather_info).to be_a Hash
@@ -26,15 +31,16 @@ RSpec.describe "WeatherService" do
   it 'can get directions with origin and destination' do
     json_response = File.read('spec/fixtures/denver_to_pueblo.json')
 
-    stub_request(:get, "http://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=#{ENV['MAP_API_KEY']}&to=Pueblo,CO").
-         with(
-           headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v1.1.0'
-           }).
-         to_return(status: 200, body: json_response, headers: {})
+    stub_request(:get,
+                 "http://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=#{ENV['MAP_API_KEY']}&to=Pueblo,CO")
+      .with(
+        headers: {
+          'Accept' => '*/*',
+          'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'User-Agent' => 'Faraday v1.1.0'
+        }
+      ).to_return(status: 200, body: json_response, headers: {})
 
-    expect(MapService.get_directions("Denver,CO", "Pueblo,CO")).to eq(JSON.parse(json_response, symbolize_names: true))
+    expect(MapService.get_directions('Denver,CO', 'Pueblo,CO')).to eq(JSON.parse(json_response, symbolize_names: true))
   end
 end
